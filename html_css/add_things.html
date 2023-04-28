@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add things</title>
+    <link rel="stylesheet" href="css/add_things.css">
+</head>
+<body>
+<form action="/add_things" method="post">
+    <div class="upper_btn">
+        <input type="submit" class="up_btn" name="btn" value="Take photo"/>
+        <input type="submit" class="up_btn" name="btn" value="Shop"/>
+        <input type="submit" class="up_btn" name="btn" value="My things"/>
+        <input type="submit" class="up_btn" name="btn" value="Profile"/>
+    </div>
+</form>
+<div class="sp"></div><a class="tex">Здесь вы можете почувствовать себя миллиардером, создавая различные предметы для продажи</a>
+<p class="tex">Загрузите квадратное фото, напишите название товара, его цену, он появится у всех во вкладке shop и все смогут его
+    купить</p>
+<form action="#" method="post" enctype="multipart/form-data">
+        <p align="center"><div class="poles">
+            <label>Name:</label>
+            <input class="ro"  type="text" name="name" required minlength="1">
+        </div></p>
+        <div class="poles">
+            <label>Price:</label>
+            <input class="ro" type="number" name="price" required minlength="1">
+        </div>
+    <div class="sp"></div>
+   <p class="s"><input class="send" type="file" name="photo" multiple accept="image/*" required>
+    <input class="poles2" type="submit" name="login" value="Сreate">
+    </form>
+</body>
+</html>

@@ -1,0 +1,172 @@
+@import url('https://fonts.cdnfonts.com/css/cash-currency');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.btn{
+	text-align: left;
+}
+html,body{
+  display: grid;
+  height: 100%;
+}
+body {
+    background: linear-gradient(-45deg, #5283ee, #3ce79a, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 7s ease infinite;
+  background-attachment: fixed
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.wrapper{
+}
+.upper_btn{
+  display: flex;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(35, 35, 43, .99);
+  position: fixed;
+  overflow: hidden;
+  top:0;
+  left:0;
+}
+.up_btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 4%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 10px;
+  border: 2px solid white;
+  font-size: 25px;
+  background: transparent;
+   color: #DFDEDF;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: background-color 1s;
+}
+.up_btn:focus,
+.up_btn:active {
+  background-color: transparent;
+  transition: none;
+}
+.up_btn:hover {
+  background: #0F52BA;
+}
+.left{
+    color: black;
+    font-size: 20px;
+    font-family: 'Cash Currency', sans-serif;
+    background: url(perg.jpg);
+    align:left;
+    padding: 17px 6%;
+    border-radius: 15px;
+}
+.piar{
+display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  background: url(money.jpg);
+  height: 600px;
+  border-radius: 50px;
+}
+.big_n{
+font-family: Serif;
+font-size: 50px;
+font-weight: bold;
+    background: gray;
+    border-radius: 40px;
+    padding: 10px 4%;
+}
+.pr{
+  margin-top: 30px;
+  margin-bottom: 70px;
+padding: 10px;
+display: flex;
+color: 	#362419;
+font-size: 70px;
+align: center;
+justify-content: space-around;
+  padding-bottom: 50px;
+}
+.products{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.products input[type="submit"] {
+
+}
+.product_name{
+  width: 350px;
+  height: 350px;
+  align-items:center;
+  text-align: center;
+}
+.photo{
+  width: 70%;
+  height: 70%;
+  border-radius: 20px;
+}
+.txt{
+  color: #362419;
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.space{
+  margin-top: 70px;
+}
+.buy {
+  padding:  10px 4%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 25px;
+  border: none;
+  font-size: 25px;
+  background: #213989;
+   color: #DFDEDF;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: background-color 1s;
+  margin-top: 15px;
+  margin-bottom: 100px;
+}
+.buy:focus,
+.buy:active {
+  background-color: #0F52BA;
+  transition: none;
+}
+.buy:hover {
+  background: #FF4646;
+}
+.user{
+  color: #484848;
+  font-size: 14px;
+}
+.txt2{
+  color: lightgray;
+  font-size: 23px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  background: #743bb2;
+  padding: 10px 4%;
+  border-radius: 20px;
+}

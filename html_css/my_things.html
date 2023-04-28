@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add things</title>
+    <link rel="stylesheet" href="css/buy_smth.css">
+</head>
+<body>
+<form action="/my_things" method="post">
+    <div class="upper_btn">
+        <input type="submit" class="up_btn" name="btn" value="Take photo"/>
+        <input type="submit" class="up_btn" name="btn" value="Shop"/>
+        <input type="submit" class="up_btn" name="btn" value="Profile"/>
+        <input type="submit" class="up_btn" name="btn" value="Add products"/>
+    </div>
+</form>
+<div class="space"></div>
+<div class="space"></div>
+<div class="pr">
+    <p>{{user}}'S THINGS</p>
+</div>
+<form action="/shop" method="post" id="buttons">
+    <div class="products">
+        <div class="product_name">
+            <p class="txt" id="Кефтеме">Кефтеме: 1000RUB <span class="user">by moti4k</span></p>
+            <img class="photo" src="css/кефтеме.jpg">
+            <p class="txt2" id="am_Кефтеме">Amount: <span style="font-size:30px">{{Кефтеме}}</span></p>
+        </div>
+        <div class="product_name">
+            <p class="txt" id="Кроссовки">Кроссовки: 3000RUB <span class="user">by moti4k</span></p>
+            <img class="photo" id="ph" src="css/кроссовки.jpg">
+            <p class="txt2" id="am_Кроссовки">Amount: <span style="font-size:30px">{{Кроссовки}}</span></p>
+        </div>
+        <div class="product_name">
+            <p class="txt" id="Борщ">Борщ: 200RUB <span class="user">by moti4k</span></p>
+            <img class="photo" src="css/borsch.jpg">
+            <p class="txt2" id="am_Борщ">Amount: <span style="font-size:30px">{{Борщ}}</span></p>
+        </div>
+        <div class="product_name">
+            <p class="txt" id="Панама">Панама: 400RUB <span class="user">by moti4k</span></p>
+            <img class="photo" src="css/panama.jpg">
+            <p class="txt2" id="am_Панама">Amount: <span style="font-size:30px">{{Панама}}</span></p>
+        </div>
+        </div>
+    <div class="space"></div>
+<div class="products">
+        <div class="product_name">
+                <p class="txt" id="раиса_в_коммиксах">раиса_в_коммиксах: 22800RUB <span class="user">by moti4k</span></p>
+                <img class="photo" src="css/images/раиса_в_коммиксах.png">
+                <p class="txt2" id="am_раиса_в_коммиксах">Amount: <span style="font-size:30px">{{раиса_в_коммиксах}}</span></p>
+            </div>
+<div class="product_name">
+                <p class="txt" id="Vladizavr">Vladizavr: 12345RUB <span class="user">by Author</span></p>
+                <img class="photo" src="css/images/Vladizavr.jpg">
+    <p class="txt2" id="am_Vladizavr">Amount: <span style="font-size:30px">{{Vladizavr}}</span></p>
+            </div>
+<div class="product_name">
+                <p class="txt" id="Негр">Негр: 29RUB <span class="user">by Nickname</span></p>
+                <img class="photo" src="css/images/Негр.jpg">
+    <p class="txt2" id="am_Негр">Amount: <span style="font-size:30px">{{Негр}}</span></p>
+            </div>
+<div class="product_name">
+                <p class="txt" id="Фото собаки">Фото собаки: 5000RUB <span class="user">by O_O</span></p>
+                <img class="photo" src="css/images/Фото собаки  .jpeg">
+    <p class="txt2" id="am_Фото собаки">Amount: <span style="font-size:30px">{{Фото_собаки}}</span></p>
+            </div>
+    </div>
+    <div class="space"></div>
+<div class="products">
+        <div class="product_name">
+                <p class="txt" id="Нога">Нога: 1000000RUB <span class="user">by moti4k</span></p>
+                <img class="photo" src="css/images/Нога.jpg">
+            <p class="txt2" id="am_Нога">Amount: <span style="font-size:30px">{{Нога}}</span></p>
+            </div>
+<div class="product_name">
+                <p class="txt" id="Любимый_position_paper">Любимый_position_paper: 1200RUB <span class="user">by moti4k</span></p>
+                <img class="photo" src="css/images/Любимый_position_paper.jpg">
+    <p class="txt2" id="am_Любимый_position_paper">Amount: <span style="font-size:30px">{{Любимый_position_paper}}</span></p>
+            </div>
+<div class="product_name">
+                <p class="txt" id="Dom">Dom: 5RUB <span class="user">by user123</span></p>
+                <img class="photo" src="css/images/Dom.jpg">
+    <p class="txt2" id="am_Dom">Amount: <span style="font-size:30px">{{Dom}}</span></p>
+            </div>
+<div class="product_name">
+                <p class="txt" id="Компания Дром">Компания Дром: 10000000RUB <span class="user">by Арнольд Шварценеггер </span></p>
+                <img class="photo" src="css/images/Компания Дром.jpg">
+    <p class="txt2" id="am_Компания Дром">Amount: <span style="font-size:30px">{{Компания_Дром}}</span></p>
+            </div>
+    </div>
+    <div class="space"></div>
+<div class="products">
+<div class="product_name">
+                <p class="txt" id="Блëстки как у Дашки Ли">Блëстки как у Дашки Ли: Обнимашки или 1000000000RUB <span class="user">by Mizu</span></p>
+                <img class="photo" src="css/images/Блëстки как у Дашки Ли.jpg">
+    <p class="txt2" id="am_Блëстки как у Дашки Ли">Amount: <span style="font-size:30px">{{Блëстки_как_у_Дашки_Ли}}</span></p>
+            </div>
+<div class="product_name">
+                    <p class="txt" id="dataшкольник">dataшкольник: 50000RUB <span class="user">by moti4k</span></p>
+                    <img class="photo" src="css/images/dataшкольник.jpg">
+    <p class="txt2" id="am_dataшкольник">Amount: <span style="font-size:30px">{{dataшкольник}}</span></p>
+                </div>
+    <div class="product_name">
+                    <p class="txt" id="Даша">Даша: 5RUB <span class="user">by moti4k</span></p>
+                    <img class="photo" src="css/images/Даша.png">
+                    <p class="txt2" id="am_Даша">Amount: <span style="font-size:30px">{{Даша}}</span></p>
+                </div>
+    <div class="product_name">
+                    <p class="txt" id="Murzik">Murzik: 666666666RUB <span class="user">by Murzik</span></p>
+                    <img class="photo" src="css/images/Murzik.jpg">
+        <p class="txt2" id="am_Murzik">Amount: <span style="font-size:30px">{{Murzik}}</span></p>
+                </div>
+    </div>
+    <div class="space"></div><div class="products">
+            <div class="product_name">
+                    <p class="txt" id="раиса_в_коммиксах2.0">раиса_в_коммиксах2.0: 92836RUB <span class="user">by moti4k</span></p>
+                    <img class="photo" src="css/images/раиса_в_коммиксах2.0.png">
+                <p class="txt2" id="am_раиса_в_коммиксах2.0">Amount: <span style="font-size:30px">{{раиса_в_коммиксах2_0}}</span></p>
+            </div>
+<div class="product_name">
+                    <p class="txt" id="me1.0">me1.0: 22821RUB <span class="user">by moti4k</span></p>
+                    <img class="photo" src="css/images/me1.0.jpg">
+    <p class="txt2" id="am_me1.0">Amount: <span style="font-size:30px">{{me1_0}}</span></p>
+</div>
+<div class="product_name">
+                    <p class="txt" id="test.">test.: 123RUB <span class="user">by moti4k</span></p>
+                    <img class="photo" src="css/images/test..jfif">
+    <p class="txt2" id="am_test.">Amount: <span style="font-size:30px">{{test_}}</span></p>
+</div>
+<div class="product_name">
+                    <p class="txt" id="Витя">Витя: 3RUB <span class="user">by moti4k</span></p>
+                    <img class="photo" src="css/images/Витя.png">
+                    <p class="txt2" id="am_Витя">Amount: <span style="font-size:30px">{{Витя}}</span></p>
+</div>
+</div>
+<div class="space"></div>
+<div class="products">
+            <div class="product_name">
+                    <p class="txt" id="Любитель раста">Любитель раста: 42000RUB <span class="user">by moti4k</span></p>
+                    <img class="photo" src="css/images/Любитель раста.jpg">
+                    <p class="txt2" id="am_Любитель раста">Amount: <span style="font-size:30px">{{Любитель_раста}}</span></p>
+</div>
+<div class="product_name">
+                    <p class="txt" id="random">random: 56425RUB <span class="user">by moti4k</span></p>
+                    <img class="photo" src="css/images/random.svg.png">
+                    <p class="txt2" id="am_random">Amount: <span style="font-size:30px">{{random}}</span></p>
+</div>
+<div class="product_name">
+                    <p class="txt" id="Географичка">Географичка: 500RUB <span class="user">by K1RKA</span></p>
+                    <img class="photo" src="css/images/Географичка.jpeg">
+                    <p class="txt2" id="am_Географичка">Amount: <span style="font-size:30px">{{Географичка}}</span></p>
+</div>
+<div class="product_name">
+                    <p class="txt" id="Подряд">Подряд: 1RUB <span class="user">by moti4k</span></p>
+                    <img class="photo" src="css/images/Подряд.jpg">
+                    <p class="txt2" id="am_Подряд">Amount: <span style="font-size:30px">{{Подряд}}</span></p>
+</div>
+</div>
+<div class="space"></div>
+<div class="products">
+            <div class="product_name">
+                    <p class="txt" id="Люблю плюсы">Люблю плюсы: 777RUB <span class="user">by moti4k</span></p>
+                    <img class="photo" src="css/images/Люблю плюсы.jpg">
+                    <p class="txt2" id="am_Люблю плюсы">Amount: <span style="font-size:30px">{{Люблю_плюсы}}</span></p>
+</div>
+<div class="product_name">
+                    <p class="txt" id="Назар">Назар: 300000RUB <span class="user">by moti4k</span></p>
+                    <img class="photo" src="css/images/Назар.jpg">
+                    <p class="txt2" id="am_Назар">Amount: <span style="font-size:30px">{{Назар}}</span></p>
+</div>
+<div class="product_name">
+                    <p class="txt" id="Злой гном">Злой гном: 99999999999999RUB <span class="user">by Tipozer</span></p>
+                    <img class="photo" src="css/images/Злой гном.png">
+                    <p class="txt2" id="am_Злой гном">Amount: <span style="font-size:30px">{{Злой_гном}}</span></p>
+</div>
+<div class="product_name">
+                    <p class="txt" id="sexy shrek">sexy shrek: 9999999999RUB <span class="user">by yonglore</span></p>
+                    <img class="photo" src="css/images/sexy shrek.jpeg">
+                    <p class="txt2" id="am_sexy shrek">Amount: <span style="font-size:30px">{{sexy_shrek}}</span></p>
+</div>
+</div>
+<div class="space"></div>
+<div class="products">
+            <div class="product_name">
+                    <p class="txt" id="apple ipad">apple ipad: 1RUB <span class="user">by yonglore</span></p>
+                    <img class="photo" src="css/images/apple ipad.jpeg">
+                    <p class="txt2" id="am_apple ipad">Amount: <span style="font-size:30px">{{apple_ipad}}</span></p>
+</div>
+<div class="product_name">
+                    <p class="txt" id="delegate of france">delegate of france: 1000000RUB <span class="user">by moti4k</span></p>
+                    <img class="photo" src="css/images/delegate of france.jpg">
+                    <p class="txt2" id="am_delegate of france">Amount: <span style="font-size:30px">{{delegate_of_france}}</span></p>
+</div>
+<div class="product_name">
+                    <p class="txt" id="China">China: 1999RUB <span class="user">by K1RKA</span></p>
+                    <img class="photo" src="css/images/China.jpeg">
+                    <p class="txt2" id="am_China">Amount: <span style="font-size:30px">{{China}}</span></p>
+</div>
+<div class="product_name">
+                    <p class="txt" id="оценка в яндекс лицее">оценка в яндекс лицее: 1000000RUB <span class="user">by moti4k</span></p>
+                    <img class="photo" src="css/images/оценка в яндекс лицее.jpg">
+                    <p class="txt2" id="am_оценка в яндекс лицее">Amount: <span style="font-size:30px">{{оценка_в_яндекс_лицее}}</span></p>
+</div>
+</div>
+<div class="space"></div>
+<div class="products">
+            <div class="product_name">
+                    <p class="txt" id="Права_на_YaMus_БОТА">Права_на_YaMus_БОТА: 100000000000000000000000000000RUB <span class="user">by SanctaBebra</span></p>
+                    <img class="photo" src="css/images/Права_на_YaMus_БОТА.png">
+                    <p class="txt2" id="am_Права_на_YaMus_БОТА">Amount: <span style="font-size:30px">{{Права_на_YaMus_БОТА}}</span></p>
+</div>
+<div class="product_name">
+                    <p class="txt" id="аниме_девочка">аниме_девочка: 1000RUB <span class="user">by SanctaBebra</span></p>
+                    <img class="photo" src="css/images/аниме_девочка.png">
+                    <p class="txt2" id="am_аниме_девочка">Amount: <span style="font-size:30px">{{аниме_девочка}}</span></p>
+</div>
+</div>
+</form>
+</body>

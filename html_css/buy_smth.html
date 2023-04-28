@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<meta charset="UTF-8"/>
+<head>
+    <meta charset="utf-8">
+    <title>
+        Buy products
+    </title>
+    <link rel="stylesheet" href="css/buy_smth.css">
+</head>
+<body>
+{% if set_scroll %}
+<script>
+    // var element = document.querySelector("#{{set_scroll}}")
+    location.href = "#{{set_scroll}}";
+</script>
+{% endif %}
+<form action="/shop" method="post">
+    <div class="upper_btn">
+        <input type="submit" class="up_btn" name="btn" value="Take photo"/>
+        <input type="submit" class="up_btn" name="btn" value="My things"/>
+        <input type="submit" class="up_btn" name="btn" value="Profile"/>
+        <input type="submit" class="up_btn" name="btn" value="Add products"/>
+        <p class="left">Money left: {{money}} RUB</p>
+    </div>
+</form>
+<div class="piar">
+    <p class="big_n">START SPENDING MONEY(To get $ take photo or sell your goods)</p>
+</div>
+<div class="pr">
+    <p>PRODUCTS</p>
+</div>
+<form action="/shop" method="post" id="buttons">
+    <div class="products">
+        <div class="product_name">
+            <p class="txt" id="Buy_кефтеме">Кефтеме: 1000RUB <span class="user">by moti4k</span></p>
+            <img class="photo" src="css/кефтеме.jpg">
+            <input type="submit" class="buy" name="btn" value="Buy_Кефтеме"/>
+        </div>
+        <div class="product_name">
+            <p class="txt" id="Buy_кроссовки">Кроссовки: 3000RUB <span class="user">by moti4k</span></p>
+            <img class="photo" id="ph" src="css/кроссовки.jpg">
+            <input type="submit" class="buy" name="btn" value="Buy_Кроссовки"/>
+        </div>
+        <div class="product_name">
+            <p class="txt" id="Buy_борщ">Борщ: 200RUB <span class="user">by moti4k</span></p>
+            <img class="photo" src="css/borsch.jpg">
+            <input type="submit" class="buy" name="btn" value="Buy_Борщ"/>
+        </div>
+        <div class="product_name">
+            <p class="txt" id="Buy_панама">Панама: 400RUB <span class="user">by moti4k</span></p>
+            <img class="photo" src="css/panama.jpg">
+            <input type="submit" class="buy" name="btn" value="Buy_Панама"/>
+        </div>
+    </div>
+    <div class="space"></div>
+    <div class="products">
+        <div class="product_name">
+            <p class="txt" id="Buy_раиса_в_коммиксах">раиса_в_коммиксах: 22800RUB <span class="user">by moti4k</span>
+            </p>
+            <img class="photo" src="css/images/раиса_в_коммиксах.png">
+            <input type="submit" class="buy" name="btn" value="Buy_раиса_в_коммиксах"/>
+        </div>
+        <div class="product_name">
+            <p class="txt" id="Buy_Vladizavr">Vladizavr: 12345RUB <span class="user">by Author</span></p>
+            <img class="photo" src="css/images/Vladizavr.jpg">
+            <input type="submit" class="buy" name="btn" value="Buy_Vladizavr"/>
+        </div>
+        <div class="product_name">
+            <p class="txt" id="Buy_Негр">Негр: 29RUB <span class="user">by Nickname</span></p>
+            <img class="photo" src="css/images/Негр.jpg">
+            <input type="submit" class="buy" name="btn" value="Buy_Негр"/>
+        </div>
+        <div class="product_name">
+            <p class="txt" id="Buy_Фото собаки">Фото собаки: 5000RUB <span class="user">by O_O</span></p>
+            <img class="photo" src="css/images/Фото собаки  .jpeg">
+            <input type="submit" class="buy" name="btn" value="Buy_Фото собаки"/>
+        </div>
+    </div>
+    <div class="space"></div>
+    <div class="products">
+        <div class="product_name">
+            <p class="txt" id="Buy_Нога">Нога: 1000000RUB <span class="user">by moti4k</span></p>
+            <img class="photo" src="css/images/Нога.jpg">
+            <input type="submit" class="buy" name="btn" value="Buy_Нога"/>
+        </div>
+        <div class="product_name">
+            <p class="txt" id="Buy_Любимый_position_paper">Любимый_position_paper: 1200RUB <span
+                    class="user">by moti4k</span></p>
+            <img class="photo" src="css/images/Любимый_position_paper.jpg">
+            <input type="submit" class="buy" name="btn" value="Buy_Любимый_position_paper"/>
+        </div>
+        <div class="product_name">
+            <p class="txt" id="Buy_Dom">Dom: 5RUB <span class="user">by user123</span></p>
+            <img class="photo" src="css/images/Dom.jpg">
+            <input type="submit" class="buy" name="btn" value="Buy_Dom"/>
+        </div>
+        <div class="product_name">
+            <p class="txt" id="Buy_Компания Дром">Компания Дром: 10000000RUB <span
+                    class="user">by Арнольд Шварценеггер </span></p>
+            <img class="photo" src="css/images/Компания Дром.jpg">
+            <input type="submit" class="buy" name="btn" value="Buy_Компания Дром"/>
+        </div>
+    </div>
+    <div class="space"></div>
+    <div class="products">
+        <div class="product_name">
+            <p class="txt" id="Buy_Блëстки как у Дашки Ли">Блëстки как у Дашки Ли: Обнимашки или 1000000000RUB <span
+                    class="user">by Mizu</span></p>
+            <img class="photo" src="css/images/Блëстки как у Дашки Ли.jpg">
+            <input type="submit" class="buy" name="btn" value="Buy_Блëстки как у Дашки Ли"/>
+        </div>
+        <div class="product_name">
+            <p class="txt" id="Buy_dataшкольник">dataшкольник: 50000RUB <span class="user">by moti4k</span></p>
+            <img class="photo" src="css/images/dataшкольник.jpg">
+            <input type="submit" class="buy" name="btn" value="Buy_dataшкольник"/>
+        </div>
+        <div class="product_name">
+            <p class="txt" id="Buy_Даша">Даша: 5RUB <span class="user">by moti4k</span></p>
+            <img class="photo" src="css/images/Даша.png">
+            <input type="submit" class="buy" name="btn" value="Buy_Даша"/>
+        </div>
+        <div class="product_name">
+            <p class="txt" id="Buy_Murzik">Murzik: 666666666RUB <span class="user">by Murzik</span></p>
+            <img class="photo" src="css/images/Murzik.jpg">
+            <input type="submit" class="buy" name="btn" value="Buy_Murzik"/>
+        </div>
+    </div>
+    <div class="space"></div>
+    <div class="products">
+        <div class="product_name">
+            <p class="txt" id="Buy_раиса_в_коммиксах2.0">раиса_в_коммиксах2.0: 92836RUB <span
+                    class="user">by moti4k</span></p>
+            <img class="photo" src="css/images/раиса_в_коммиксах2.0.png">
+            <input type="submit" class="buy" name="btn" value="Buy_раиса_в_коммиксах2.0"/>
+        </div>
+        <div class="product_name">
+            <p class="txt" id="Buy_me1.0">me1.0: 22821RUB <span class="user">by moti4k</span></p>
+            <img class="photo" src="css/images/me1.0.jpg">
+            <input type="submit" class="buy" name="btn" value="Buy_me1.0"/>
+        </div>
+        <div class="product_name">
+            <p class="txt" id="Buy_test.">test.: 123RUB <span class="user">by moti4k</span></p>
+            <img class="photo" src="css/images/test..jfif">
+            <input type="submit" class="buy" name="btn" value="Buy_test."/>
+        </div>
+        <div class="product_name">
+            <p class="txt" id="Buy_Витя">Витя: 3RUB <span class="user">by moti4k</span></p>
+            <img class="photo" src="css/images/Витя.png">
+            <input type="submit" class="buy" name="btn" value="Buy_Витя"/>
+        </div>
+    </div>
+    <div class="space"></div>
+    <div class="products">
+        <div class="product_name">
+            <p class="txt" id="Buy_Любитель раста">Любитель раста: 42000RUB <span class="user">by moti4k</span></p>
+            <img class="photo" src="css/images/Любитель раста.jpg">
+            <input type="submit" class="buy" name="btn" value="Buy_Любитель раста"/>
+        </div>
+        <div class="product_name">
+            <p class="txt" id="Buy_random">random: 56425RUB <span class="user">by moti4k</span></p>
+            <img class="photo" src="css/images/random.svg.png">
+            <input type="submit" class="buy" name="btn" value="Buy_random"/>
+        </div>
+        <div class="product_name">
+            <p class="txt" id="Buy_Географичка">Географичка: 500RUB <span class="user">by K1RKA</span></p>
+            <img class="photo" src="css/images/Географичка.jpeg">
+            <input type="submit" class="buy" name="btn" value="Buy_Географичка"/>
+        </div>
+        <div class="product_name">
+            <p class="txt" id="Buy_Подряд">Подряд: 1RUB <span class="user">by moti4k</span></p>
+            <img class="photo" src="css/images/Подряд.jpg">
+            <input type="submit" class="buy" name="btn" value="Buy_Подряд"/>
+        </div>
+    </div>
+    <div class="space"></div>
+    <div class="products">
+        <div class="product_name">
+            <p class="txt" id="Buy_Люблю плюсы">Люблю плюсы: 777RUB <span class="user">by moti4k</span></p>
+            <img class="photo" src="css/images/Люблю плюсы.jpg">
+            <input type="submit" class="buy" name="btn" value="Buy_Люблю плюсы"/>
+        </div>
+        <div class="product_name">
+            <p class="txt" id="Buy_Назар">Назар: 300000RUB <span class="user">by moti4k</span></p>
+            <img class="photo" src="css/images/Назар.jpg">
+            <input type="submit" class="buy" name="btn" value="Buy_Назар"/>
+        </div>
+        <div class="product_name">
+            <p class="txt" id="Buy_Злой гном">Злой гном: 99999999999999RUB <span class="user">by Tipozer</span></p>
+            <img class="photo" src="css/images/Злой гном.png">
+            <input type="submit" class="buy" name="btn" value="Buy_Злой гном"/>
+        </div>
+      <div class="product_name">
+                <p class="txt" id="Buy_sexy shrek">sexy shrek: 9999999999RUB <span class="user">by yonglore</span></p>
+                <img class="photo" src="css/images/sexy shrek.jpeg">
+                <input type="submit" class="buy" name="btn" value="Buy_sexy shrek"/>
+            </div>
+    </div>
+    <div class="space"></div><div class="products">
+        <div class="product_name">
+                <p class="txt" id="Buy_apple ipad">apple ipad: 1RUB <span class="user">by yonglore</span></p>
+                <img class="photo" src="css/images/apple ipad.jpeg">
+                <input type="submit" class="buy" name="btn" value="Buy_apple ipad"/>
+            </div><div class="product_name">
+                <p class="txt" id="Buy_delegate of france">delegate of france: 1000000RUB <span class="user">by moti4k</span></p>
+                <img class="photo" src="css/images/delegate of france.jpg">
+                <input type="submit" class="buy" name="btn" value="Buy_delegate of france"/>
+            </div><div class="product_name">
+                <p class="txt" id="Buy_China">China: 1999RUB <span class="user">by K1RKA</span></p>
+                <img class="photo" src="css/images/China.jpeg">
+                <input type="submit" class="buy" name="btn" value="Buy_China"/>
+            </div><div class="product_name">
+                <p class="txt" id="Buy_оценка в яндекс лицее">оценка в яндекс лицее: 1000000RUB <span class="user">by moti4k</span></p>
+                <img class="photo" src="css/images/оценка в яндекс лицее.jpg">
+                <input type="submit" class="buy" name="btn" value="Buy_оценка в яндекс лицее"/>
+            </div>
+    </div>
+    <div class="space"></div><div class="products">
+        <div class="product_name">
+                <p class="txt" id="Buy_Права_на_YaMus_БОТА">Права_на_YaMus_БОТА: 100000000000000000000000000000RUB <span class="user">by SanctaBebra</span></p>
+                <img class="photo" src="css/images/Права_на_YaMus_БОТА.png">
+                <input type="submit" class="buy" name="btn" value="Buy_Права_на_YaMus_БОТА"/>
+            </div><div class="product_name">
+                <p class="txt" id="Buy_аниме_девочка">аниме_девочка: 1000RUB <span class="user">by SanctaBebra</span></p>
+                <img class="photo" src="css/images/аниме_девочка.png">
+                <input type="submit" class="buy" name="btn" value="Buy_аниме_девочка"/>
+            </div>
+    </div>
+    </form>
+    </body>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>
+        Take photo
+    </title>
+    <link rel="stylesheet" href="css/photo.css">
+</head>
+<body>
+<form method="post" action="/photo">
+    <div class="upper_btn">
+        <input type="submit" class="up_btn" name="btn" value="Add products"/>
+        <input type="submit" class="up_btn" name="btn" value="Shop"/>
+        <input type="submit" class="up_btn" name="btn" value="My things"/>
+        <input type="submit" class="up_btn" name="btn" value="Profile"/>
+    </div>
+</form>
+<form enctype="multipart/form-data" method="post">
+    <p class="p1">Sent us your photo to tell you who you are.</p>
+    <p><input class="send" type="file" name="photo" multiple accept="image/*">
+        <input class="d" type="submit" value="Отправить"></p>
+    <p class="im"><img src={{image}} class="pt"><img src={{image2}} class="pt">You look like <span class="a">{{person}}</span> and have {{money}}RUB</p>
+<p>You look like <span class="a">{{person}}</span> and have {{money}}RUB</p>
+</form>
+
+</body>
